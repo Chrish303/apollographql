@@ -1,10 +1,118 @@
 const Userlist = [
-    {id:"1",name:"chrish",username:"chrizzz",age:21,nationality:"Indian"},
-    {id:"2",name:"ajay",username:"ajayzzz",age:21,nationality:"beehar"},
-    {id:"3",name:"somanth",username:"sobithzzz",age:21,nationality:"Udhra pradhesh"},
-    {id:"4",name:"sheik",username:"sheikeyy",age:21,nationality:"Gujarat"},
+    //we have to create dummy datas
+    {
+        id:"1",
+        name:"chrish",
+        username:"chrizzz",
+        age:21,
+        nationality:"Indian",
+    friends:[
+        {
+            id:"3",
+            name:"somanth",
+            username:"sobithzzz",
+            age:21,
+            nationality:"Udhrapradhesh"},
+        {
+                id:"2",
+            name:"ajay",
+            username:"ajayzzz",
+            age:21,
+            nationality:"beehar"},    
+    ]},
+    {
+        id:"2",name:"ajay",
+        username:"ajayzzz",
+        age:21,
+        nationality:"beehar",
+        friends:[
+        {
+                id:"3",
+                name:"somanth",
+                username:"sobithzzz",
+                age:21,
+                nationality:"Udhrapradhesh"},
+        {
+                id:"1",
+                name:"chrish",
+                username:"chrizzz",
+                age:21,
+                nationality:"Indian",},
+    ]},
+    {
+        id:"3",
+        name:"somanth",
+        username:"sobithzzz",
+        age:21,
+        nationality:"Udhrapradhesh"},
+    {
+        id:"4",
+        name:"sheik",
+        username:"sheikeyy",
+        age:21,
+        nationality:"Gujarat",
+            friends:[
+        {
+            id:"3",
+            name:"somanth",
+            username:"sobithzzz",
+            age:21,
+            nationality:"Udhrapradhesh"},
+        {
+            id:"2",
+            name:"ajay",
+            username:"ajayzzz",
+            age:21,
+            nationality:"beehar"},
+    ]},
     {id:"5",name:"nandhu",username:"nandhuzz",age:21,nationality:"Kerala"},
     {id:"6",name:"siva",username:"sivaxxx",age:21,nationality:"Nasa"}
-]
+];
 
-module.exports = Userlist
+
+const Movielist = [
+    {
+        id:"1",
+        name:"leo",
+        yearofpublication:2023,
+        Intheater:true
+    },
+    {
+        id:"6",
+        name:"kumki",
+        yearofpublication:2019,
+        Intheater:false
+    },
+    {
+        id:"7",
+        name:"salaar",
+        yearofpublication:2024,
+        Intheater:true
+    },
+    {
+        id:"2",
+        name:"valimai",
+        yearofpublication:2022,
+        Intheater:false
+    },
+    {
+        id:"3",
+        name:"paiya",
+        yearofpublication:2021,
+        Intheater:true
+    },
+    {
+        id:"4",
+        name:"Ayan",
+        yearofpublication:2010,
+        Intheater:false
+    },
+    {
+        id:"5",
+        name:"cobra",
+        yearofpublication:2020,
+        Intheater:true
+    },
+ ]
+
+ module.exports = { Userlist, Movielist };
