@@ -74,42 +74,49 @@ const Movielist = [
     {
         id:"1",
         name:"leo",
+        hero:"Vijay",
         yearofpublication:2023,
         Intheater:true
     },
     {
         id:"6",
         name:"kumki",
+        hero:"prabhu",
         yearofpublication:2019,
         Intheater:false
     },
     {
         id:"7",
         name:"salaar",
+        hero:"Prabhas",
         yearofpublication:2024,
         Intheater:true
     },
     {
         id:"2",
         name:"valimai",
+        hero:"Ajith",
         yearofpublication:2022,
         Intheater:false
     },
     {
         id:"3",
         name:"paiya",
+        hero:"Karthick",
         yearofpublication:2021,
         Intheater:true
     },
     {
         id:"4",
         name:"Ayan",
+        hero:"Surya",
         yearofpublication:2010,
         Intheater:false
     },
     {
         id:"5",
         name:"cobra",
+        hero:"Vikram",
         yearofpublication:2020,
         Intheater:true
     },

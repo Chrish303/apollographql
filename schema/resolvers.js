@@ -28,8 +28,17 @@ const resolvers = {
             (Movielist,
                 (moveis)=>
                     moveis.yearofpublication>=2010 && moveis.yearofpublication<=2024)
-        }
-       }
+        },
+       },
+},
+Mutation: {
+    createUser: (parent, args) => {
+      const user = args.input;
+      const lastId = Userlist[Userlist.length - 1].id;
+      user.id = lastId + 1;
+      Userlist.push(user);
+      return user;
+    },
 }
 }
 

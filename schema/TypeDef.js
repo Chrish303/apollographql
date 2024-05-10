@@ -15,6 +15,7 @@ const typeDefs = gql`
     type Movie {
         id: ID!
         name:String!
+        hero:String!
         yearofpublication:String!
         Intheater:Boolean!
     }
@@ -30,6 +31,16 @@ const typeDefs = gql`
 
     }  
 
+    input CreateUserInput {
+            name: String!
+            username: String!
+            age: Int!
+            nationality: Nationality
+  }
+
+    type Mutation {
+        createUser(input: CreateUserInput!): User
+    }
     enum Nationality{
         Indian
         beehar
